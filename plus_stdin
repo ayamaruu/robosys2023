@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+def tonum(s):
 ans = 0.0
 for line in sys.stdin:
     try:
