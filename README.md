@@ -12,13 +12,19 @@ calculator機能(plus,minus,times,divided)
 ## test.bash
 `ng () { echo NG at Line $1  res=1 }`
 * ng関数を定義し、引数として渡された行番号を使って"NG at Line"とメッセージを表示、res=1とする
-`res=0`
+```
+res=0
+```
 res=0として初期化、エラーしていない状態、として定義する
 `out=$(seq 5 | ./plus)`
 * out変数にseq 5 | ./plusの結果を代入する
-`[ "${out}" = 14.0 ] || ng ${LINENO}`
+```
+[ "${out}" = 14.0 ] || ng ${LINENO}
+```
 * outの値が14.0と等しいかについてテストし、等しくなければng関数を実行する、${LINENO}は行番号を示す。
-`[ "$res" = 0 ] && echo OK`
+```
+[ "$res" = 0 ] && echo OK
+```
 * 前に記述したものでエラーが起きなかった場合resの値は0のままなのでOKと表示する
 
 ## 必要なソフトウェア
