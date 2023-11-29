@@ -9,11 +9,25 @@ ng () {
 res=0
 
 ### I/O TEST ###
+out=$(seq 1 | ./plus)
+[ "${out}" = 1.0 ] || ng ${LINENO}
+
+out=$(seq 2 | ./plus)
+[ "${out}" = 3.0 ] || ng ${LINENO}
+
+out=$(seq 3 | ./plus)
+[ "${out}" = 6.0 ] || ng ${LINENO}
+
 out=$(seq 5 | ./plus)
 [ "${out}" = 15.0 ] || ng ${LINENO}
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 16.0 ] || ng ${LINENO}
+out=$(seq 7 | ./plus)
+[ "${out}" = 28.0 ] || ng ${LINENO}
+
+out=$(seq 10 | ./plus)
+[ "${out}" = 55.0 ] || ng ${LINENO}
+
+
 ### STRANGE INPUT ###
 #out=$(seq あ | ./plus)
 #[ "$?" = 1 ]      || ng ${LINENO}
