@@ -1,6 +1,11 @@
 ## plusコマンド
 ![test](https://github.com/ayamaruu/robosys2023/actions/workflows/test.yml/badge.svg)
 
+## 導入方法
+下記のリンクからサイトにとぶ
+```
+ https://github.com/ayamaruu/robosys2023.git
+```
 標準入力から読み込んだ数字を足す。
 標準入力の値が小数点以下であった場合も読み込む
 実行するごとにおみくじが行われ今日のくじ運が表示される
