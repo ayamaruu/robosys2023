@@ -1,10 +1,9 @@
-## plusコマンド
+## plusコマンド,minusコマンド
 ![test](https://github.com/ayamaruu/robosys2023/actions/workflows/test.yml/badge.svg)
 
 * 標準入力から読み込んだ数字を足す。
 * 標準入力から読み込んだ数字を引く。
 * 各行を整数に変換しようとしますが、もし整数に変換できない場合（ValueErrorが発生した場合）、浮動小数点数に変換
-
 
 ## 導入方法
 下記のリンクからサイトにとぶ
