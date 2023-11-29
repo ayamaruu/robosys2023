@@ -23,13 +23,33 @@ res=0
 ```
 * res=0として初期化、エラーしていない状態、として定義する
 ```
+out=$(seq 1 | ./plus)
+```
+* out変数にseq 1 | ./plusの結果を代入する
+```
+[ "${out}" = 1 ] || ng ${LINENO}
+```
+* outの値が1と等しいかについてテストし、等しくなければng関数を実行する、${LINENO}は行番号を示す。
+```
+out=$(seq 1 | ./plus)
+[ "${out}" = 1 ] || ng ${LINENO}
+
+out=$(seq 2 | ./plus)
+[ "${out}" = 3 ] || ng ${LINENO}
+
+out=$(seq 3 | ./plus)
+[ "${out}" = 6 ] || ng ${LINENO}
+
 out=$(seq 5 | ./plus)
+[ "${out}" = 15 ] || ng ${LINENO}
+
+out=$(seq 7 | ./plus)
+[ "${out}" = 28 ] || ng ${LINENO}
+
+out=$(seq 10 | ./plus)
+[ "${out}" = 55 ] || ng ${LINENO}
 ```
-* out変数にseq 5 | ./plusの結果を代入する
-```
-[ "${out}" = 14.0 ] || ng ${LINENO}
-```
-* outの値が14.0と等しいかについてテストし、等しくなければng関数を実行する、${LINENO}は行番号を示す。
+* 上と同様にあっているかテストし、等しくなければng関数を実行す
 ```
 [ "$res" = 0 ] && echo OK
 ```
