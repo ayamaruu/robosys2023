@@ -1,19 +1,18 @@
 ## plusコマンド
 ![test](https://github.com/ayamaruu/robosys2023/actions/workflows/test.yml/badge.svg)
 
+* 標準入力から読み込んだ数字を足す。
+* 各行を整数に変換しようとしますが、もし整数に変換できない場合（ValueErrorが発生した場合）、浮動小数点数に変換
+* 標準入力の値が小数点以下であった場合も読み込む
+* 実行するごとにおみくじが行われ今日のくじ運が表示される
+* calculator機能(plus,minus,times,divided)
+
+
 ## 導入方法
 下記のリンクからサイトにとぶ
 ```
  https://github.com/ayamaruu/robosys2023.git
 ```
-標準入力から読み込んだ数字を足す。
-標準入力の値が小数点以下であった場合も読み込む
-実行するごとにおみくじが行われ今日のくじ運が表示される
-calculator機能(plus,minus,times,divided)
-
-
-各行を整数に変換しようとしますが、もし整数に変換できない場合（ValueErrorが発生した場合）、浮動小数点数に変換
-
 ## test.bash
 ```
 ng () { echo NG at Line $1  res=1 }
