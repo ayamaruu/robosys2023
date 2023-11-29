@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3 -vx
 import sys
 
 ans = 0
