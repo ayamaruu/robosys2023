@@ -36,6 +36,7 @@ out=$(seq 5 | ./minus)
 out=$(seq 10 | ./minus)
 [ "${out}" = -55 ] || ng ${LINENO}
 
+
 ### STRANGE INPUT ###
 #out=$(seq あ | ./plus)
 #[ "$?" = 1 ]      || ng ${LINENO}
