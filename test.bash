@@ -10,22 +10,22 @@ res=0
 
 ### I/O TEST ###
 out=$(seq 1 | ./plus)
-[ "${out}" = 1.0 ] || ng ${LINENO}
+[ "${out}" = 1 ] || ng ${LINENO}
 
 out=$(seq 2 | ./plus)
-[ "${out}" = 3.0 ] || ng ${LINENO}
+[ "${out}" = 3 ] || ng ${LINENO}
 
 out=$(seq 3 | ./plus)
-[ "${out}" = 6.0 ] || ng ${LINENO}
+[ "${out}" = 6 ] || ng ${LINENO}
 
 out=$(seq 5 | ./plus)
-[ "${out}" = 15.0 ] || ng ${LINENO}
+[ "${out}" = 15 ] || ng ${LINENO}
 
 out=$(seq 7 | ./plus)
-[ "${out}" = 28.0 ] || ng ${LINENO}
+[ "${out}" = 28 ] || ng ${LINENO}
 
 out=$(seq 10 | ./plus)
-[ "${out}" = 55.0 ] || ng ${LINENO}
+[ "${out}" = 55 ] || ng ${LINENO}
 
 
 ### STRANGE INPUT ###
