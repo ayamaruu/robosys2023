@@ -49,6 +49,18 @@ out=$(seq 10 | ./plus)
 ```
 * 上と同様にあっているかテストし、等しくなければng関数を実行す
 ```
+out=$(seq 3 | ./minus)
+[ "${out}" = -6 ] || ng ${LINENO}
+
+out=$(seq 5 | ./minus)
+[ "${out}" = -15 ] || ng ${LINENO}
+
+out=$(seq 10 | ./minus)
+[ "${out}" = -55 ] || ng ${LINENO}
+```
+* out変数にseq 数字 | ./minusの結果を代入する
+outの値が等しいかについてテストし、等しくなければng関数を実行する、${LINENO}は行番号を示す。
+```
 [ "$res" = 0 ] && echo OK
 ```
 * 前に記述したものでエラーが起きなかった場合resの値は0のままなのでOKと表示する
