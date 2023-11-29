@@ -1,11 +1,11 @@
-#plusコマンド
+plusコマンド
 ![test](https://github.com/ayamaruu/robosys2023/actions/workflows/test.yml/badge.svg)
 
 標準入力から読み込んだ数字を足す。
 
 各行を整数に変換しようとしますが、もし整数に変換できない場合（ValueErrorが発生した場合）、浮動小数点数に変換
 
-## test.bash
+# test.bash
 ng () { echo NG at Line $1  res=1 }
 * ng関数を定義し、引数として渡された行番号を使って"NG at Line"とメッセージを表示、res=1とする
 res=0
@@ -17,11 +17,11 @@ out=$(seq 5 | ./plus)
 [ "$res" = 0 ] && echo OK
 * 前に記述したものでエラーが起きなかった場合resの値は0のままなのでOKと表示する
 
-### 必要なソフトウェア
+## 必要なソフトウェア
 * Python
   * テスト済み: 3.7~3.10
 
-### テスト環境
+## テスト環境
 * Ubuntu
 
 このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます.
