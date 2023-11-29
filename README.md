@@ -73,6 +73,10 @@ https://github.com/ayamaruu/robosys2023/blob/dev/plus
 https://github.com/ayamaruu/robosys2023/blob/dev/minus
 https://github.com/ayamaruu/robosys2023/blob/dev/test.bash
 ```
+これらのプログラムを使用し、それぞれをファイルに保存し、ターミナルで以下の操作を行うことによって使用可能になる
+```
+chmod +x ファイル名
+```
 ## 必要なソフトウェア
 * Python
   * テスト済み: 3.7~3.10
