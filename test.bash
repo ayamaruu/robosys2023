@@ -27,6 +27,14 @@ out=$(seq 7 | ./plus)
 out=$(seq 10 | ./plus)
 [ "${out}" = 55 ] || ng ${LINENO}
 
+out=$(seq 3 | ./plus)
+[ "${out}" = -6 ] || ng ${LINENO}
+
+out=$(seq 5 | ./plus)
+[ "${out}" = -15 ] || ng ${LINENO}
+
+out=$(seq 10 | ./minus)
+[ "${out}" = -55 ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
 #out=$(seq あ | ./plus)
